@@ -3,6 +3,6 @@ mod editor;
 use editor::Editor;
 
 fn main() {
-    let editor = Editor::default();
-    editor.run();
+    print!("\x1b[2J");
+    Editor::default().run();
 }
